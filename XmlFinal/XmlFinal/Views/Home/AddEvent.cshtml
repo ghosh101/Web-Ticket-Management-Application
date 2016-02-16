@@ -1,0 +1,298 @@
+﻿
+@{
+    ViewBag.Title = "AddEvent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Images")
+<script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+<div id="homeheader" class="pageHeader">Add Event</div>
+<div id="content">
+    <div>Can get tickets for following games</div>
+    <div id="gameButtons">
+        <div>
+            <button class="buttons">Get Ticket for Game1</button>
+        </div>
+        <div>
+            <button class="buttons">Get Ticket for Game2</button>
+        </div>
+        <div>
+            <button class="buttons">Get Ticket for Game3</button>
+        </div>
+    </div>
+    
+
+    <div>
+        <div id="Arena" class="dispInln">
+            <div id="top">
+                <div id="section1" data-SectionName="Section 1" class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+                <div id="section2" data-SectionName="Section 2" class="midSection">
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                </div>
+                <div id="section3"  data-SectionName="Section 3"  class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+            </div>
+
+            <div id="Mid">
+                <div id="section4" data-SectionName="Section 4" class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+                <div id="section5" data-SectionName="Center Court" class="midSection">
+                    <div class="gameImgDivInner"><img class="arenaImg" src="~/Images/Fair.jpg" /></div>
+                </div>
+                <div id="section6" data-SectionName="Section 6" class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+            </div>
+
+            <div id="Bottom">
+                <div id="section7" data-SectionName="Section 7" class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+                <div id="section8" data-SectionName="Section 8" class="midSection">
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                    <div class="seatMid"></div>
+                </div>
+                <div id="section9" data-SectionName="Section 9" class="sideSection">
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                    <div class="seatSide"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="statusDiv" style="width:25%" class="dispInln">
+            <div id="section1Status" class="hideDiv sectionMargin">Set Price for Section 1:&nbsp;<input id="section1Price" type="text" /></div>
+            <div id="section2Status" class="hideDiv sectionMargin">Set Price for Section 2:&nbsp;<input id="section2Price" type="text" /></div>
+            <div id="section3Status" class="hideDiv sectionMargin">Set Price for Section 3:&nbsp;<input id="section3Price" type="text" /></div>
+            <div id="section4Status" class="hideDiv sectionMargin">Set Price for Section 4:&nbsp;<input id="section4Price" type="text" /></div>
+            <div id="section6Status" class="hideDiv sectionMargin">Set Price for Section 6:&nbsp;<input id="section6Price" type="text" /></div>
+            <div id="section7Status" class="hideDiv sectionMargin">Set Price for Section 7:&nbsp;<input id="section7Price" type="text" /></div>
+            <div id="section8Status" class="hideDiv sectionMargin">Set Price for Section 8:&nbsp;<input id="section8Price" type="text" /></div>
+            <div id="section9Status" class="hideDiv sectionMargin">Set Price for Section 9:&nbsp;<input id="section9Price" type="text" /></div>
+            <div style="padding:2%; width:50%">Select event date &nbsp;<input type="date" style="" id=""/></div>
+            <div style="padding:2%; width:50%"><button type="submit" style="" id="login">Create Event</button></div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var counter = 1;
+    $(document).ready(function () {
+        
+        $(".sideSection, .midSection").addClass("mask");
+        $("#section5").removeClass("mask");
+        $(document).on("mouseenter", ".sideSection, .midSection", "", OnMouseIn);
+        $(document).on("mouseleave", ".sideSection, .midSection", "", OnMouseOut);
+        $(document).on("mouseover", ".sideSection, .midSection", "", OnMouseOverSection);
+
+        $(document).on("click", ".sideSection, .midSection", "", OnMouseClick);
+        $(document).on("change", 'input[type="date"]', "", OnDateChange);
+    });
+
+    function OnMouseIn(event) {
+        if ($(this).attr("id") == "section5") {
+            return;
+        }
+        var element = $(this);
+        $(this).removeClass("mask");
+    }
+
+    function OnMouseOut(event) {
+        if ($(this).attr("id") == "section5") {
+            return;
+        }
+        $(this).addClass("mask");
+    }
+
+    function OnMouseOverSection(event)
+    {
+        $(this).attr('title', $(this).attr("data-SectionName"));       
+    }
+
+    function OnMouseClick(event)
+    {
+        if ($(this).attr("id") == "section5")
+        {
+            return;
+        }
+        $(this).toggleClass("selectedSection");        
+        $("#" + $(this).attr("id") + "Status").toggleClass("hideDiv").toggle('slide', { direction: right }, 500);
+        
+    }
+
+    function OnDateChange(event)
+    {
+        //check on available dates
+        alert(this.value);
+    }
+</script>
+

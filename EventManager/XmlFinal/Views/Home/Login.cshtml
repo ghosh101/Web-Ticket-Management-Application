@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="width:50%">
+    <div>Please enter credentials in order to add event</div>
+    <div style="padding:2%; width:50%">Username: &nbsp;<div class="dispInln" style="float:right"><input id="username" type="text" /></div></div>
+    <div style="padding:2%; width:50%">Password: &nbsp;<div class="dispInln" style="float:right"><input id="password" type="password" /></div></div>
+    <div style="padding:2%; width:50%"><button type="submit" style="float:right" id="login">Login</button></div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on("click","#login","",submitLogin);
+    });
+
+    function submitLogin(event)
+    {
+        if($("#username").val()=="")
+        {
+            alert("Please enter a username" + $("#username").val());
+            $("#username").attr("", "");
+            return;
+        }
+        else if ($("#password").val() == "")
+        {
+            alert("Please enter a password");
+            return;
+        }
+        $.ajax({
+        url: '@Url.Action("Login","Home")',
+            data:JSON.stringify( {
+                username: $("#username").val(),
+                password: $("#password").val()
+            }),
+        type: 'POST',
+        contentType: 'application/json; charset=utf-8',
+        success: function (data) {
+            // return values
+            @*@{ Response.Redirect("~/Home/AddEvent");}*@
+            console.log("Success!");
+            location.href='/Home/AddEvent';
+        },
+        error: function () { console.log('error!!'); }
+        });
+
+    }
+</script>

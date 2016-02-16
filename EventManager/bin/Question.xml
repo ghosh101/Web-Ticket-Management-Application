@@ -1,0 +1,47 @@
+<QuestionSet>
+  <MCQ>
+    <Question>
+      <QStatement>What is XSLT?</QStatement>
+      <Option>PL</Option>
+      <Option>Framework</Option>
+      <Option isAnswer="true">Script</Option>
+      <Option>None of the above</Option>
+      <marks>1</marks>
+      <negativeMarks>.5</negativeMarks>
+    </Question>
+    
+    <Question>
+      <QStatement>Which state does Cincinnati lies in?</QStatement>
+      <Option isAnswer="true">Ohio</Option>
+      <Option>Illinois</Option>
+      <Option>Kentucky</Option>
+      <Option>Indiana</Option>
+      <marks>1</marks>
+      <negativeMarks>.5</negativeMarks>
+    </Question>
+	
+	<Question>
+      <QStatement>What is XML used for?</QStatement>
+      <Option>draw images</Option>
+      <Option>making games</Option>
+      <Option isAnswer="true">store and transport information</Option>
+      <Option>All of the above</Option>
+      <marks>1</marks>
+      <negativeMarks>.5</negativeMarks>
+    </Question>
+		
+  </MCQ>
+  <EssayQuestion>
+    <Question>
+      <QStatement>What are the steps necessary to parse XML documents?</QStatement>
+	  <Option isAnswer="true">Superficially, this is a fairly basic question. However, the point is not to determine whether candidates understand the concept of a parser but rather have them walk through the process of parsing XML documents step by step. Determining whether a non validating or validating parser is needed, choosing the appropriate parser, and handling errors are all important aspects to this process that should be included in the candidate's response.</Option>
+      <marks>6</marks>
+    </Question>
+	
+	<Question>
+      <QStatement>What are the steps necessary to parse XML documents?</QStatement>
+	  <Option isAnswer="true">Superficially, this is a fairly basic question. However, the point is not to determine whether candidates understand the concept of a parser but rather have them walk through the process of parsing XML documents step by step. Determining whether a non validating or validating parser is needed, choosing the appropriate parser, and handling errors are all important aspects to this process that should be included in the candidate's response.</Option>
+      <marks>6</marks>
+    </Question>
+  </EssayQuestion>
+</QuestionSet>

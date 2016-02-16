@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div style="width:50%">
+    <div>Please enter details to cancel ticket</div>
+    <div style="padding:2%; width:50%">Ticket reference: &nbsp;<div class="dispInln" style="float:right"><input id="ticketid" type="text" /></div></div>
+    <div style="padding:2%; width:50%">Contact No: &nbsp;<div class="dispInln" style="float:right"><input id="contact" type="text" /></div></div>
+    <div style="padding:2%; width:50%"><button type="submit" style="float:right" id="cancel">Cancel</button></div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", "#cancel", "", submitLogin);
+    });
+
+    function submitLogin(event)
+    {
+        if ($("#ticketid").val() == "")
+        {
+            alert("Please enter a ticket reference" + $("#ticketid").val());
+            $("#ticketid").attr("", "");
+            return;
+        }
+        else if ($("#contact").val() == "")
+        {
+            alert("Please enter corresponding contact no");
+            return;
+        }
+        $.ajax({
+        url: '@Url.Action("ConfirmCancel","Home")',
+            data:JSON.stringify( {
+                ticketId: $("#ticketid").val(),
+                contactNo: $("#contact").val()
+            }),
+        type: 'POST',
+        contentType: 'application/json; charset=utf-8',
+        success: function (data) {
+            // return values
+            @*@{ Response.Redirect("~/Home/AddEvent");}*@
+            
+            console.log("Success!");
+            location.href='/Home/Index';
+        },
+        error: function () { console.log('error!!'); }
+        });
+
+    }
+</script>
+

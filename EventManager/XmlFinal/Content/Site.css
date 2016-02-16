@@ -1,0 +1,145 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.floatLeft
+{
+    float:left;
+}
+.dispInln
+{
+    display:inline-block;
+}
+.mask
+{
+    opacity:.3;
+}
+.gameImgDiv
+{
+    width:33%;
+    display:inline-block;    
+}
+.gameImgDivInner
+{
+    width: 65%;
+    margin-left: 17.5%;
+}
+.gameImg
+{
+    margin:2%;
+    height:98%;
+    width:98%;
+}
+
+.fontClass
+{
+    font-family:Garamond;
+}
+.pageHeader
+{
+    
+    font-size:larger;
+    font-size:-webkit-xxx-large;
+}
+.buttons
+{
+    margin:10px;
+}
+.sideSection
+{
+    border-radius:5px;
+    margin-bottom:4px;
+    width:28%;
+    height:33%;
+    border:solid 1px;
+    display:inline-block;
+    vertical-align:top;
+}
+.midSection
+{
+    border-radius:5px;
+    margin-bottom:4px;
+    width:39%;
+    height:33%;
+    border:solid 1px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.seatSide
+{
+    width:23px;
+    margin:3px;
+    height:21px;
+    display:inline-block;
+    border: solid 1px #7e9aa8;
+    border-radius: 5px;
+}
+
+.seatMid
+{
+    width:23px;
+    margin:3px;
+    height:21px;
+    display:inline-block;
+    border: solid 1px #7e9aa8;
+    border-radius: 5px;
+}
+#Arena
+{
+    width:51%;
+    margin-left:20%;
+}
+
+.arenaImg
+{
+    margin:2%;
+    height:98%;
+    width:98%;
+}
+
+.reserved 
+{
+    opacity:.3;
+}
+
+.selectedSection 
+{
+    opacity: 1!important;
+}
+
+.sectionMargin
+{
+    margin:2%;
+}
+
+.selected 
+{
+    background-color:#49ba8e;
+}
+
+.hideDiv
+{
+    display:none;
+}
